@@ -12,9 +12,9 @@ import java.util.stream.IntStream;
  * Created by Dipesh Gupta on 3/8/2016.
  */
 public class UndirectedGraph implements Graph {
-    private int numberOfVertices;
-    private int numberOfEdges;
-    private List<Integer>[] indexOfVertices;
+    private final int numberOfVertices;
+    private final List<Integer>[] indexOfVertices;
+    private  int numberOfEdges;
 
 
     public UndirectedGraph(final int numberOfVertices){
