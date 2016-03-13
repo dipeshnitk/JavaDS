@@ -64,9 +64,11 @@ public class DepthFirstSearch implements GraphSearch {
         this.sourceVertex=sourceVertex;
         this.marked= new boolean[graph.numberOfVeritices()];
         this.edgeTo= new int[graph.numberOfVeritices()];
+        depthFirstSearch(graph,sourceVertex);
     }
 
     public static DepthFirstSearch create(final Graph graph, final int sourceVertex){
        return new DepthFirstSearch(graph, sourceVertex);
+
     }
 }

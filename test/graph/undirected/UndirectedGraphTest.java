@@ -2,15 +2,7 @@ package graph.undirected;
 
 import graph.Graph;
 import graph.undirected.UndirectedGraph;
-import org.junit.Assert;
 import org.junit.Test;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.IntStream;
-import java.util.stream.StreamSupport;
 
 import static org.junit.Assert.assertEquals;
 
@@ -38,5 +30,8 @@ public class UndirectedGraphTest {
         undirectedGraph.addEdgeBetween(0,2);
 
         assertEquals(2,undirectedGraph.getAllVerticesConnectedTo(0).spliterator().estimateSize());
+        assertEquals(0,undirectedGraph.getAllVerticesConnectedTo(1).spliterator().estimateSize());
+        assertEquals(2,undirectedGraph.getAllVerticesConnectedTo(2).spliterator().estimateSize());
+        assertEquals(2,undirectedGraph.getAllVerticesConnectedTo(3).spliterator().estimateSize());
     }
 }
