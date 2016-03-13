@@ -1,6 +1,7 @@
-package graph;
+package graphsearch;
 
-import graph.undirected.DepthFirstSearch;
+import graph.Graph;
+import graph.graphsearch.impl.DepthFirstSearch;
 import graph.undirected.UndirectedGraph;
 import org.junit.Assert;
 import org.junit.Test;

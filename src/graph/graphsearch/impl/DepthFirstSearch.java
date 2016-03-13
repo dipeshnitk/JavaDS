@@ -1,13 +1,11 @@
-package graph.undirected;
+package graph.graphsearch.impl;
 
 import graph.Graph;
-import graph.GraphSearch;
+import graph.graphsearch.GraphSearch;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.StreamSupport;
 
 /**
  * Depth First Search implementation on a Graph

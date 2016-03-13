@@ -1,10 +1,10 @@
-package graph;
+package graph.graphsearch;
 
 import java.util.Optional;
 
 /** An abstraction for search algorithms on Graph
- * @see DepthFirstSearch
- * @see BreadthFirstSearch
+ * @see graph.graphsearch.impl.DepthFirstSearch
+ * @see graph.graphsearch.impl.BreadthFirstSearch
  * Created by Dipesh Gupta on 3/13/2016.
  */
 public interface GraphSearch {
